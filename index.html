@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stephen Hawking</title>
+    <link rel="icon" href="logo.png" type="images/x-icon">
+</head>
+<body style="background-color: black;font-family:monospace;">
+    <h1 style="color:orangered;font-size: 80px;">Stephen Hawking</h1>
+    <div width="900px">
+        <img src="hawking.jpeg" height="500px" style="float:left;">
+        <div style="float: left;background-color: rgb(0, 24, 44);height: 100%;color: white;padding: 10px;font-size: 20px;width:558px; height: 480px; overflow:auto;">
+            <p>
+                Stephen William Hawking was an English theoretical physicist and cosmologist. He was born on the 8<sup>th</sup> of January, 1942 and died on the 14<sup>th</sup> of March, 2018. He is known for his work on singularities and his discovery of Hawking Radiation, so far the only confirmed way that a black hole can meet its demise.
+            </p>
+            <p>
+                Just before his 21<sup>st</sup> birthday, Hawking was diagnosed with Amyotrophic Lateral Sclerosis which causes his nuerons involved with muscle movement to degrade slowly. He was told that he wouldn't live more than two years but that didn't stop him. Eventually, he required a wheel chair and in 1985 he was diagnosed with severe pneumonia and underwent tracheotomy which cost him his voice. He communicated using an artificial voice and selected words by moving the few functional muscles that were left. 
+            </p>
+            <p>
+                Despite his failing muscles, in 1973, Hawking decided to combine general relativity with quantum mechanics, two things that by definition aren't supposed to overlap, but can due to the concentration of over a star's worth of mass in an infinitely small point at the centers of black holes. He concluded that black holes slowly radiate particles over time before ending with an explosion. The way this what's now known as Hawking Radiation works is as follows:
+                <ol>
+                    <li>At the event horizon, the energy from the black hole creates a pair of matter and antimatter particles</li>
+                    <li>Usually, the particles will just merge and turn back into energy but sometimes, the black hole swallows one of the particles which means that the other particles can't merge</li>
+                    <li>It is then radiated away, carrying with it a bit of the black hole's mass</li>
+                </ol>
+                Because taking subatomic quantities of mass from something with atleast the mass of a few suns is so slow, it takes a <em>long</em> time for a black hole to dissipate. <em>Eons</em> is an understatement. It would take 1.15975*10<sup>67</sup> years for a black hole with the Sun's mass to dissipate. That's about twelve thousand vigintillion. Twelve thousand because vigintillion <em>is the last of the official 'illions'</em>. The number itself is named after the Virgo Galaxy Cluster because the volume of it is ≈4 vigintillion cubic kilometres. That's right, a galaxy cluster is no match for the longevity of the black holes within it.<br>
+                <button style="background-color: white; color: rgb(0, 24, 44);padding: 5px; margin-top: 10px; border-radius: 10px;" onclick="toggleModal(1)">Show Hawking Radiation Diagram</button>
+            </p>
+            <p>
+                The fact that he was able to do all this with severe and uncurable ALS shows determination and persistence. He survived a miraculous 55 years with the disease before succumbing on the 14<sup>th</sup> of March, 2018; only 10% of ALS patients survive 10 years after being diagnosed with it. 
+            </p>
+            <p>
+                The reason I chose Hawking for this passion project is that he discovered that black holes aren't actually inescapable prisons. Sure, if you threw a rock at one then you wouldn't get a rock back, but instead unfathomably small and numerous particles and anti-particles that don't form a rock. But atleast you got something back. It is also the only confirmed way for a black hole to die. If it stops swallowing stuff for an unimagineable amount of time, it keeps shrinking until it explodes. The other, controversial way to over-charge or over-spin the black hole by throwing the right stuff at the right time, which may not be possible. If it were, then it would only destroy the event horizen and leave the singularity, where all the mass is concentrated in an infinitely small point, will be left. This new singularity is completely unpredictable. It could create a planet by violating the first law of thermodynamics or it could end the universe. A black hole that dies of hawking radiation loses mass form the singularity, so it perishes with the event horizen and everything else, leaving no potentially universe-deleting entities.
+            </p>
+        </div>
+    </div>
+    <div style="height: 500px;padding: 10px;background-color: darkgray;position:fixed;z-index:1;top:100px;left:100px;" id="x">
+        <img src="blackhole.jpeg" height="80%" style="float:left"><img src="radiation.png" height="80%" style="float:left;"><br>
+        <button style="margin-top: 10px;padding:10px;width:100%;height: 90px;font-size:20px;font-family:monospace;background-color: darkblue;color:white" onclick="toggleModal(0)">Close</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $("#x").hide()
+        function toggleModal(o){
+            if(o){
+                $("#x").slideDown(1000)
+            }else{
+                $("#x").fadeOut(1000)
+            }
+        }
+    </script>
+</body>
+</html>
